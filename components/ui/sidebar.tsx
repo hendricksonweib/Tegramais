@@ -1,4 +1,6 @@
 "use client"
+import Logo from "../../public/logo.png"
+import Image from 'next/image'
 
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
@@ -335,11 +337,14 @@ function SidebarInput({
 function SidebarHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
+    
       data-slot="sidebar-header"
       data-sidebar="header"
       className={cn("flex flex-col gap-2 p-2", className)}
       {...props}
-    />
+    >
+    </div>
+    
   )
 }
 
