@@ -1,7 +1,7 @@
 "use client"
 
 import { ChevronRight, type LucideIcon } from "lucide-react"
-import Image from 'next/image' // Importando o Image do Next.js
+import Image from 'next/image' 
 
 import {
   Collapsible,
@@ -19,7 +19,7 @@ import {
   SidebarMenuSubItem,
 } from "./ui/sidebar"
 
-import Logo from "../public/logo.png" // Caminho para a logo
+import Logo from "../public/logo.png" 
 
 export function NavMain({
   items,
@@ -37,7 +37,6 @@ export function NavMain({
 }) {
   return (
     <SidebarGroup>
-      {/* Exibindo a logo acima de "Aprendizado" */}
       <div className="flex justify-center mb-4">
         <Image src={Logo} alt="Logo" width={120} height={60} />
       </div>
